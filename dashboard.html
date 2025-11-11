@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard - Buuga Deenta</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/dexie@3.2.5/dist/dexie.js"></script>
+</head>
+<body>
+<main>
+   <button id="logoutBtn">Logout</button>
+  <h1>Buuga Deenta </h1>
+  
+ 
+  <form id="debtForm">
+    
+    <input type="text" id="name" placeholder="Magaca" required>
+    <input type="number" id="customerId" placeholder="ID" min="1">
+    <input type="text" id="phone" placeholder="Numberka">
+    <input type="number" id="amount" placeholder="Lacagta" required>
+    <input type="date" id="date" required>
+    <input type="time" id="time" required>
+    <button class="sumb" type="submit">Diiwaangeli</button>
+  </form>
+
+  <div class="nav-buttons">
+    <a href="unpaid.html"><button>❌Deemo aan labixin</button></a>
+     <a href="reminder.html"><button>⏰Deemo xasuusin</button></a>
+    <a href="paid.html"><button>✅Deemo labixiyay</button></a>
+   
+  </div>
+
+  <footer>&copy; 2025 Buuga Deenta.</footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

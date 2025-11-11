@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Buuga Deenta</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-image">
+      <img src="debtimg.jpg" alt="Debt management" />
+    </div>
+    <div class="hero-text">
+      <h2>Maamul Deemaha Si Fudud</h2>
+      <p>System-kan wuxu kaa caawinayaa sidaad ugu keydsanleheyd, ulasoconlahayd deemaha sifudud.</p>
+      <div class="hero-buttons">
+        <button id="loginBtn" class="btn login">Login</button>
+        <button id="registerBtn" class="btn register">Register</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Geli numberka" required />
+      <label>PIN</label>
+      <input type="number" placeholder="Enter 4-digit PIN" id="pinLogin" required />
+      <button type="submit" class="btn login">Login</button>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label>Customer ID (Auto-generated)</label>
+      <input type="number" id="customerIdRegister" placeholder="ID will be auto-generated" min="1" />
+      <label>Phone Number</label>
+      <input type="tel" id="phoneRegister" placeholder="Enter your phone number" required />
+      <label>Full Name</label>
+      <input type="text" id="nameRegister" placeholder="Enter your full name" required />
+      <label>Create PIN</label>
+      <input type="number" placeholder="Enter 4-digit PIN" id="pinRegister" required />
+      <label>Re-enter PIN</label>
+      <input type="number" placeholder="Re-enter 4-digit PIN" id="pinRegisterConfirm" required />
+      <button type="submit" class="btn register">Register</button>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 Buuga Deenta. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/dexie@3.2.5/dist/dexie.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
