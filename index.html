@@ -70,10 +70,11 @@
 <footer class="footer">
   <p>© 2025 DeemaHa</p>
 </footer>
-
+<script src="manifest.json"></script>
+  <script src="sw.js"></script>
 <script src="https://unpkg.com/dexie@3.2.5/dist/dexie.js"></script>
 <script src="script.js"></script>
-  if ("serviceWorker" in navigator) {
+  <script>if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
       .register("/sw.js")
@@ -85,6 +86,6 @@
       });
   });
 }
-
+</script>
 </body>
 </html>
