@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Buuga Deenta</title>
+  <link rel="manifest" href="manifest.json">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#007BFF">
+
+<title>DeemaHa</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -63,10 +68,23 @@
 
 <!-- Footer -->
 <footer class="footer">
-  <p>© 2025 Buuga Deenta. All rights reserved.</p>
+  <p>© 2025 DeemaHa</p>
 </footer>
 
 <script src="https://unpkg.com/dexie@3.2.5/dist/dexie.js"></script>
 <script src="script.js"></script>
+  if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((registration) => {
+        console.log("ServiceWorker registered:", registration.scope);
+      })
+      .catch((error) => {
+        console.log("ServiceWorker registration failed:", error);
+      });
+  });
+}
+
 </body>
 </html>
