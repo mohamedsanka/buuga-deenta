@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: #02457b; /* dark blue from logo */
+  background: #0017FF; /* main color */
   color: white;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 3rem 1rem;
-  background: linear-gradient(135deg, #049f42 0%, #02457b 100%);
+  background: #0017FF;
 }
 
 .hero-container {
@@ -66,17 +66,23 @@ body {
   padding: 0.8rem;
   font-size: 1rem;
   border-radius: 8px;
-  border: none;
+  border: 1px solid white;
+  background: #0017FF;
+  color: white;
+}
+
+.login-form input::placeholder {
+  color: white;
 }
 
 .login-form input:focus {
-  outline: 2px solid #049f42;
+  outline: 2px solid white;
 }
 
 .login-form .btn.login {
   padding: 0.8rem;
-  background: #049f42; /* logo green */
-  color: white;
+  background: white;
+  color: #0017FF;
   font-weight: bold;
   border-radius: 8px;
   border: none;
@@ -85,7 +91,7 @@ body {
 }
 
 .login-form .btn.login:hover {
-  background: #037f33;
+  opacity: 0.85;
 }
 
 /* Footer */
@@ -93,8 +99,8 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  background: #013359;
-  color: #ccc;
+  background: #0017FF;
+  color: white;
 }
 
 /* Responsive */
