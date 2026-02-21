@@ -1,62 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="theme-color" content="#0017FF">
-
-<title>DeemaHa</title>
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-container">
-    <div class="hero-image">
-      <img src="Debt22.png" alt="Debt management" />
-    </div>
-    <div class="hero-text">
-     
-     
-
-      <!-- Login Form -->
-      <form id="loginForm" class="login-form">
-        <input type="tel" placeholder="Phone Number" required />
-        <input type="number" placeholder="PIN" required />
-        <button type="submit" class="btn login">Login</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <p>Wixii Faahfaahin ah Laxiriir <strong>0617872749</strong></p>
-  <p>© 2025 DeemaHa</p>
-</footer>
-
-<!-- Scripts -->
-<script src="manifest.json"></script>
-<script src="sw.js"></script>
-<script src="https://unpkg.com/dexie@3.2.5/dist/dexie.js"></script>
-<script src="script.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("/sw.js")
-      .then((registration) => {
-        console.log("ServiceWorker registered:", registration.scope);
-      })
-      .catch((error) => {
-        console.log("ServiceWorker registration failed:", error);
-      });
-  });
-}
-</script>
-</body>
-</html>
+  <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <link rel="manifest" href="manifest.json"> 
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> 
+    <meta name="theme-color" content="#007BFF"> 
+    <title>DeemaHa</title> <link rel="stylesheet" href="style.css" /> 
+  </head> <body>
+    <!-- Hero Section --> <section class="hero">
+      <div class="hero-container">     
+        <div class="hero-image">      
+          <img src="Debt22.png" alt="Debt management" />   
+        </div>     <div class="hero-text">                   
+          <div class="hero-buttons">         
+            <button id="loginBtn" class="btn login">Login</button>        
+            <button id="registerBtn" class="btn register">Register</button>       </div>     </div>   </div> </section> <!-- Login Modal --> <div id="loginModal" class="modal">   <div class="modal-content">     <span class="close">&times;</span>     <h2>Login</h2>     <form id="loginForm">       <label>Phone Number</label>       <input type="tel" placeholder="Geli numberka" required />       <label>PIN</label>       <input type="number" placeholder="Enter 4-digit PIN" id="pinLogin" required />       <button type="submit" class="btn login">Login</button>     </form>   </div> </div> <!-- Register Modal --> <div id="registerModal" class="modal">   <div class="modal-content">     <span class="close">&times;</span>     <h2>Register</h2>     <form id="registerForm">       <label>Customer ID (Auto-generated)</label>       <input type="number" id="customerIdRegister" placeholder="ID will be auto-generated" min="1" />       <label>Phone Number</label>       <input type="tel" id="phoneRegister" placeholder="Enter your phone number" required />       <label>Full Name</label>       <input type="text" id="nameRegister" placeholder="Enter your full name" required />       <label>Create PIN</label>       <input type="number" placeholder="Enter 4-digit PIN" id="pinRegister" required />       <label>Re-enter PIN</label>       <input type="number" placeholder="Re-enter 4-digit PIN" id="pinRegisterConfirm" required />       <button type="submit" class="btn register">Register</button>     </form>   </div> </div> <!-- Footer --> <footer class="footer"> <p>Wixii Faahfaahin ah Laxiriir <strong> 0617872749</strong></p>   <p>© 2025 DeemaHa</p> </footer> <script src="manifest.json"></script>   <script src="sw.js"></script> <script src="https://unpkg.com/dexie@3.2.5/dist/dexie.js"></script> <script src="script.js"></script>   <script>if ("serviceWorker" in navigator) {   window.addEventListener("load", () => {     navigator.serviceWorker       .register("/sw.js")       .then((registration) => {         console.log("ServiceWorker registered:", registration.scope);       })      
+  
+  
+  .catch((error) => {         console.log("ServiceWorker registration failed:", error);       });   }); } </script> </body> </html> 
