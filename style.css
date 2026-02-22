@@ -201,8 +201,8 @@ button:hover {
 /* Navigation Buttons */ 
 .nav-buttons { 
   display: flex; 
-  gap: 0.5rem; 
-  margin-top: 20px; 
+  gap: 1rem; 
+  
   justify-content: space-between;
   align-items: center;
 } 
