@@ -203,7 +203,7 @@ button:hover {
   display: flex; 
   gap: 0.5rem; 
   margin-top: 1rem; 
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 } 
 .nav-buttons button, .nav-buttons a button {
   flex: 1;  
