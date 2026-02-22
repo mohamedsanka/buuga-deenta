@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; 
 } 
+#hide{
+  display: hide
+}
 body { 
   font-family: 'Segoe UI', Tahoma, sans-serif;  
   background: #004466;  
